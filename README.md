@@ -1,1 +1,1 @@
-"This is my capstone project for my META Frontend Development Certificate"
+"This is my capstone project for the META Frontend Development Certificate"
