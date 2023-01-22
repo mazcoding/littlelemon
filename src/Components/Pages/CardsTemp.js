@@ -20,12 +20,12 @@ import { Box,
 function CardsTemp({infos}) {
 
   return (
-    <Flex   width="100%"  paddingLeft="15%"  paddingRight="15%" >
+    <Flex wrap="wrap"  width="100%"  paddingLeft="15%"  paddingRight="15%" justify={"center"}>
         {infos.map((info) => (
             <Card
-            margin={2}
+            margin={4}
             key= {info.id}
-            width="33%"
+            width="30%"
             minW="min-content"
             borderTopRadius="16"
             bg="#EDEFEE"  >
@@ -49,7 +49,6 @@ function CardsTemp({infos}) {
                 </CardBody>
                 <Divider />
                 <CardFooter>
-                
                     <HStack>
                     <Button bg="#F4CE14" textColor="#495E57">
                         Order a Delivery

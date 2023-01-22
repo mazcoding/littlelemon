@@ -32,9 +32,9 @@ function Highlights() {
  ])
 
   return (
-    <Box marginTop="15%">
+    <Box marginTop="10%">
       <HStack paddingLeft={"15%"} margin="5" justify="space-between" paddingRight={"15%"}>
-        <Heading fontFamily="Markazi Text Medium" textColor="#495E57">This Weeks Specials!</Heading>
+        <Heading fontFamily="Markazi Text Medium" textColor="#495E57">This Week's Specials!</Heading>
         <Button fontFamily="Markazi Text Medium" fontSize="sm" width="fit-content" bg="#F4CE14" textColor="#495E57" borderRadius="16">Online Menu</Button>
       </HStack>
       <CardsTemp infos={infos}/>
