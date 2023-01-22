@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/Logo.svg'
+import { chakra } from '@chakra-ui/react'
+
 function Footer() {
   return (
     <footer>
