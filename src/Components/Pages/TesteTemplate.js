@@ -1,21 +1,35 @@
 import React from 'react'
-import { Card, SimpleGrid, CardHeader, Heading, CardBody, Button, Text, CardFooter } from '@chakra-ui/react'
+import { Card, SimpleGrid, Flex, CardHeader, Heading, CardBody, Grid, Image, Avatar, Text, CardFooter } from '@chakra-ui/react'
 
-function TesteTemplate() {
+function TesteTemplate({testemonial}) {
+
+
+
   return (
-    <SimpleGrid spacing={4}  templateColumns='repeat(auto-fill, minmax(200px, 1fr))' marginTop="8">
-    <Card>
-      <CardHeader>
-        <Heading size='md'> Customer dashboard</Heading>
-      </CardHeader>
-      <CardBody>
-        <Text>View a summary of all your customers over the last month.</Text>
-      </CardBody>
-      <CardFooter>
-        <Button>View here</Button>
-      </CardFooter>
-    </Card>
-    </SimpleGrid>
+    <Flex wrap="wrap"  width="100%"  paddingLeft="15%"  paddingRight="15%" justify={"center"}>
+      {testemonial.map((testemonial) => (
+        <Card margin={4}
+        key={testemonial.id}
+        width="20%"
+        minW="min-content"
+        borderRadius="16"
+        bg="#EDEFEE" >
+          <CardHeader>
+            <Heading size='md'> {testemonial.rating}</Heading>
+          </CardHeader>
+          <CardBody>
+            <Grid templateColumns='repeat(2, 1fr)'>
+              <Avatar size="lg" name={testemonial.name} src={testemonial.image}></Avatar>
+              <Text fontWeight="bold" textAlign="center" paddingTop="12.5%" >{testemonial.name}</Text>
+            </Grid>
+          </CardBody>
+          <CardFooter>
+            <Text>{testemonial.review}</Text>
+          </CardFooter>
+        </Card>
+      ))
+      }
+    </Flex>
   )
 }
 

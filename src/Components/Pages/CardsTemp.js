@@ -20,12 +20,12 @@ import { Box,
 function CardsTemp({infos}) {
 
   return (
-    <Flex wrap="wrap"  width="100%"  paddingLeft="15%"  paddingRight="15%" justify={"center"}>
+    <Flex wrap="wrap"  width="100%"  paddingLeft="10%"  paddingRight="10%" justify={"center"}>
         {infos.map((info) => (
             <Card
             margin={4}
             key= {info.id}
-            width="30%"
+            width="25%"
             minW="min-content"
             borderTopRadius="16"
             bg="#EDEFEE"  >
