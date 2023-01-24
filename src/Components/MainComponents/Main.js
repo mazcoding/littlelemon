@@ -8,10 +8,10 @@ import ShortAbout from "../Pages/ShortAbout"
 function Main() {
   return (
     <main>
-      <Hero/>
-      <Highlights/>
-      <Teste/>
-      <ShortAbout/>
+        <Hero/>
+        <Highlights/>
+        <Teste/>
+        <ShortAbout/>
     </main>
   )
 }
