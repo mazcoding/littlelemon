@@ -34,8 +34,8 @@ function Highlights() {
   return (
     <Box marginTop="7.5%" paddingBottom="5%">
       <HStack paddingLeft="15%" paddingRight="15%" justify="space-between" paddingBottom="2.5%">
-        <Heading fontFamily="Markazi Text Medium" textColor="#495E57">This Week's Specials!</Heading>
-        <Button fontFamily="Markazi Text Medium" fontSize="sm" width="fit-content" bg="#F4CE14" textColor="#495E57" borderRadius="16">Online Menu</Button>
+        <Heading  textColor="#495E57">This Week's Specials!</Heading>
+        <Button  fontSize="sm" width="fit-content" bg="#F4CE14" textColor="#495E57" borderRadius="16">Online Menu</Button>
       </HStack>
       <CardsTemp infos={infos}/>
     </Box>

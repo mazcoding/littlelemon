@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Markazi TExt Medium";
+  font-family: "Markazi Text", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

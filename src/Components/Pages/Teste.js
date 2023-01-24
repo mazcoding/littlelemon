@@ -74,7 +74,7 @@ function Teste() {
 
   return (
     <Box bg="#495E57"  w="100%" height="fit-content" >
-        <Heading fontFamily="Markazi Text Medium" textColor="#F4CE14" textAlign="center" paddingTop="5%" paddingBottom="4%">Testemonials</Heading>
+        <Heading textColor="#F4CE14" textAlign="center" paddingTop="5%" paddingBottom="4%">Testemonials</Heading>
         <HStack paddingBottom="5%">
           <TesteTemplate testemonial={testemonial}/>
         </HStack>

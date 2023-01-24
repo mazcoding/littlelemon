@@ -8,8 +8,8 @@ import Socials from '../Pages/Socials'
 function Footer() {
   return (
     <footer>
-      <Flex bg="#495E57" width="100%"  paddingLeft="10%"  paddingRight="10%" justify="center" gap="10%" paddingBottom="5%" paddingTop="5%">
-        <Box boxSize="100px">
+      <Flex height="auto" bg="#495E57" width="100vw" paddingLeft="10%"  paddingRight="10%" justify="center" gap="10%" paddingBottom="5%" paddingTop="5%">
+        <Box boxSize="7vh">
           <Image src={logo} alt="Logo"/>
         </Box>
         <NavigationBottom/>

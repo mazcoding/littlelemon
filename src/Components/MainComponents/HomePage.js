@@ -1,16 +1,18 @@
 
-import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
-import Header from './Header';
-import Main from './Main';
-import Footer from './Footer';
+import Hero from "../Pages/Hero"
+import Highlights from "../Pages/Highlights"
+import Teste from "../Pages/Teste"
+import ShortAbout from "../Pages/ShortAbout"
 
 function HomePage() {
   return (
-    <div>
-      <Main/>
-      <Footer/>
-    </div>
+    <main>
+      <Hero/>
+      <Highlights/>
+      <Teste/>
+      <ShortAbout/>
+    </main>
    );
 }
 
