@@ -4,7 +4,7 @@ import { Box, Flex } from '@chakra-ui/react'
 function NavigationBottom() {
     return (
         <Box>
-            <Flex align="start" fontWeight="bold" textColor="white" flexDirection="column"  gap={1}>
+            <Flex fontSize="13" align="start" textColor="white" flexDirection="column"  gap={1}>
                   <a href="/">Home</a>
                   <a href="/about">About</a>
                   <a href="/menu">Menu</a>

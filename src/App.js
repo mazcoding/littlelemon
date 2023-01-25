@@ -16,7 +16,7 @@ function App() {
                <div className="content">
                   <Routes>
                      <Route path="/" element={ <HomePage />} />
-                     <Route path="/reservation" element={ <BookingPage />} />
+                     <Route path="/reservation" element={ <BookingPage/>} />
                   </Routes>
                </div>
                </ChakraProvider>

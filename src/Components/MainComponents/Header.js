@@ -11,9 +11,9 @@ function Header() {
   }
   return (
     <header>
-      <HStack  spacing={100} align="center" justify="center" minWidth="fit-content" maxWidth="100%" margin={"1%"}>
-          <Box onClick={handldeLogo}>
-            <Image  src={logo}  alt="The logo of little lemon" />
+      <HStack spacing={100} align="center" justify="center" minWidth="fit-content" maxWidth="100%" margin={"1%"}>
+          <Box >
+            <Image onClick={handldeLogo}  src={logo}  alt="The logo of little lemon" />
           </Box>
           <Navigation/>
       </HStack>

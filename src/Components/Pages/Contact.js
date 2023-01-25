@@ -6,7 +6,7 @@ import { FaLocationArrow, FaPhone, FaEnvelope } from 'react-icons/fa'
 function Contact() {
   return (
     <Box>
-     <Flex fontWeight="bold" textColor="white" flexDirection="column"  gap={5}>
+     <Flex fontSize={13} textColor="white" flexDirection="column"  gap={5}>
             <HStack gap={2} align="baseline">
                 <FaLocationArrow color="#F4CE14"/>
                 <Text textAlign="left">2727 Farland Street<br/>60636 Chicago IL</Text>
@@ -17,7 +17,7 @@ function Contact() {
             </HStack>
             <HStack gap={2}>
                 <FaEnvelope color="#F4CE14"/>
-                <Text>info@littlelemon.com</Text>
+                <a href="mailto:info@littlelemon.com">info@littlelemon.com</a>
             </HStack>
 
     </Flex>

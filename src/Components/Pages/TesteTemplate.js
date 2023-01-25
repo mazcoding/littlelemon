@@ -6,7 +6,7 @@ function TesteTemplate({testemonial}) {
 
 
   return (
-    <Flex wrap="wrap"  width="100%"  paddingLeft="15%"  paddingRight="15%" justify={"center"}>
+    <Flex wrap="wrap"  width="100%"  paddingLeft="10vw"  paddingRight="10vw" justify={"center"}>
       {testemonial.map((testemonial) => (
         <Card margin={3}
         key={testemonial.id}
