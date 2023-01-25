@@ -2,7 +2,7 @@ import React from 'react'
 import CardsTemp from './CardsTemp'
 import { useState } from 'react'
 
-import { Heading, VStack, HStack, Box , Text, Button} from '@chakra-ui/react'
+import { Heading, HStack, Box , Button} from '@chakra-ui/react'
 function Highlights() {
 
   const [infos, setInfos] = useState([

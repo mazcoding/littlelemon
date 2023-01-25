@@ -1,4 +1,4 @@
-import { Box, Button, Image, Grid,Flex, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Image, Grid, Heading, Spacer, Text, VStack } from '@chakra-ui/react'
 import resturant from  "/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/hero.jpg"
 import React from 'react'
 

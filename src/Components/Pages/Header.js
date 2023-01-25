@@ -1,8 +1,8 @@
 import React from 'react'
 import logo from '/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/Logo.svg'
-import Navigation from '../Pages/Navigation'
+import Navigation from '../MainComponents/Navigation'
 import { Helmet } from 'react-helmet'
-import { Box, Flex, Grid, HStack, Image } from '@chakra-ui/react'
+import { Box, HStack, Image } from '@chakra-ui/react'
 
 function Header() {
 

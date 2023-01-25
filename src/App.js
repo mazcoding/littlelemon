@@ -1,10 +1,10 @@
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import React from 'react';
-import Header from './Components/MainComponents/Header';
-import HomePage from './Components/MainComponents/HomePage';
-import BookingPage from './Components/MainComponents/BookingPage';
-import Footer from './Components/MainComponents/Footer';
+import Header from './Components/Pages/Header';
+import HomePage from './Components/Pages/HomePage';
+import BookingPage from './Components/Pages/BookingPage';
+import Footer from './Components/Pages/Footer';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
                   </Routes>
                </div>
                </ChakraProvider>
-            <Footer/>   
+            <Footer/>
          </div>
       </Router>
    );

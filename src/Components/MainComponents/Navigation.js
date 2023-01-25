@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, List, } from '@chakra-ui/react'
+import { Box, Flex} from '@chakra-ui/react'
 
 function Navigation() {
   return (

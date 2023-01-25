@@ -17,12 +17,11 @@ import {
 import { useState } from 'react'
 
 
-function BookingPage() {
+function BookingForm({availableTimes, setAvailableTimes}) {
 
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [mail, setMail] = useState("");
-  const [time, setTime] = useState("");
   const [number, setNumber] = useState("");
   const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
@@ -109,8 +108,8 @@ function BookingPage() {
               as='table'
               >Time</FormLabel>
             <Select
-              value={time}
-              onChange={(e) => setTime(e.target.value)}
+              value={availableTimes}
+              onChange={(e) => setAvailableTimes(e.target.value)}
               color='black'
               bg="white"
               placeholder='Select option'>
@@ -166,4 +165,4 @@ function BookingPage() {
   )
 }
 
-export default BookingPage
+export default BookingForm

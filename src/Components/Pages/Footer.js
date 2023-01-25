@@ -1,9 +1,9 @@
 import React from 'react'
 import logo from '/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/verticalLogo.jpg'
 import { Flex, Image, Box } from '@chakra-ui/react'
-import NavigationBottom from '../Pages/NavigationBottom'
-import Contact from '../Pages/Contact'
-import Socials from '../Pages/Socials'
+import NavigationBottom from '../MainComponents/NavigationBottom'
+import Contact from '../MainComponents/Contact'
+import Socials from '../MainComponents/Socials'
 
 function Footer() {
   return (

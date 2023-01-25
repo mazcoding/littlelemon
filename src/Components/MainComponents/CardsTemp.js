@@ -1,20 +1,16 @@
 import React from 'react'
-import { Box,
-    Wrap,
+import {
     Heading,
     Divider,
     CardFooter,
-    ButtonGroup,
     Button,
     Card,
     Image,
     Text,
     CardBody,
-    Spacer,
     Stack,
     HStack,
-    Flex,
-    Grid} from '@chakra-ui/react'
+    Flex} from '@chakra-ui/react'
     import { FaMotorcycle } from 'react-icons/fa';
 
 function CardsTemp({infos}) {
@@ -50,7 +46,7 @@ function CardsTemp({infos}) {
                 <Divider />
                 <CardFooter>
                     <HStack>
-                    <Button bg="#F4CE14" textColor="#495E57">
+                    <Button bg= "#F4CE14"textColor="#495E57">
                         Order a Delivery
                     </Button>
                     <FaMotorcycle/>

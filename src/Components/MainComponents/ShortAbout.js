@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Image, Grid,Flex, Heading, HStack, Spacer, Text, VStack } from '@chakra-ui/react'
+import { Box, Image, Grid, Heading, Text, VStack } from '@chakra-ui/react'
 import dude from "/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/Mario and Adrian b.jpg"
 import chef from "/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/restaurant chef B.jpg"
 function ShortAbout() {
