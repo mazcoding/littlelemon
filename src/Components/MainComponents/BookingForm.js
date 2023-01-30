@@ -14,16 +14,16 @@ import {
   Heading,
   Button,
 } from '@chakra-ui/react'
-import { useState } from 'react'
+import { useState} from 'react'
 
 
-function BookingForm({availableTimes, setAvailableTimes}) {
+
+function BookingForm( {date, submitForm, availableTimes, handleDateChange}) {
 
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [mail, setMail] = useState("");
   const [number, setNumber] = useState("");
-  const [date, setDate] = useState("");
   const [occasion, setOccasion] = useState("");
   const [request, setRequest] = useState("");
 
@@ -96,12 +96,12 @@ function BookingForm({availableTimes, setAvailableTimes}) {
               paddingTop="2vh"
               >Date</FormLabel>
             <Input
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
+              value={date} 
+              onChange={() => handleDateChange} type={"date"}
               bg="white"
               textColor="black"
               placeholder="Select Date"
-              type="date"/>
+              />
 
             <FormLabel
               paddingTop="2vh"
@@ -109,16 +109,10 @@ function BookingForm({availableTimes, setAvailableTimes}) {
               >Time</FormLabel>
             <Select
               value={availableTimes}
-              onChange={(e) => setAvailableTimes(e.target.value)}
               color='black'
               bg="white"
               placeholder='Select option'>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
-                <option value="21:00">21:00</option>
-                <option value="22:00">22:00</option>
+              {availableTimes.availableTimes.map(availableTimes => {return <option key={availableTimes}>{availableTimes}</option>})}
             </Select>
 
         </FormControl>
@@ -155,10 +149,11 @@ function BookingForm({availableTimes, setAvailableTimes}) {
 
       <Button
         type="submit"
+        onClick= {submitForm}
         bg="#F4CE14"
         w="max-content"
         textColor="#495E57"
-        >Proceed to payment</Button>
+        >Make reservation</Button>
 
     </VStack>
   </Box>

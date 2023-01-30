@@ -5,25 +5,22 @@ import Header from './Components/Pages/Header';
 import HomePage from './Components/Pages/HomePage';
 import BookingPage from './Components/Pages/BookingPage';
 import Footer from './Components/Pages/Footer';
+import ConfirmedBooking from './Components/MainComponents/ConfirmedBooking';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
       <Router>
-         <div className='App'>
             <Header/>
                <ChakraProvider>
-               <div className="content">
                   <Routes>
                      <Route path="/" element={ <HomePage />} />
                      <Route path="/reservation" element={ <BookingPage/>} />
+                     <Route path="/confirmation" element={<ConfirmedBooking/>} />
                   </Routes>
-               </div>
                </ChakraProvider>
             <Footer/>
-         </div>
       </Router>
    );
 }
-
 export default App;
