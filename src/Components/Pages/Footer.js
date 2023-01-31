@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/verticalLogo.jpg'
+import logo from '../MainComponents/images/verticalLogo.jpg'
 import { Flex, Image, Box } from '@chakra-ui/react'
 import NavigationBottom from '../MainComponents/NavigationBottom'
 import Contact from '../MainComponents/Contact'

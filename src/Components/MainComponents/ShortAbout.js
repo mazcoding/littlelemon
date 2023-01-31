@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Image, Grid, Heading, Text, VStack } from '@chakra-ui/react'
-import dude from "/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/Mario and Adrian b.jpg"
-import chef from "/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/restaurant chef B.jpg"
+import dude from "./images/Mario and Adrian b.jpg"
+import chef from "./images/restaurant chef B.jpg"
 function ShortAbout() {
   return (
     <Box   w="100%" h="auto" paddingTop="5%" paddingBottom="5%" paddingLeft="15%" paddingRight="15%">
