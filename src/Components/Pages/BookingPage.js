@@ -1,11 +1,15 @@
 import React, {useReducer} from 'react'
-import { useEffect} from 'react'
+import {useState} from 'react'
 import { useNavigate } from "react-router-dom"
 import BookingForm from '../MainComponents/BookingForm'
 
 
 
-function BookingPage(props) {
+function BookingPage() {
+
+  const [date, setDate] = useState("");
+
+
 
   const seededRandom = function (seed) {
     var m = 2**35 - 31;
@@ -45,22 +49,23 @@ function initializeTimes() {
 }
 
 
-let navigate = useNavigate(); 
-const submitForm = (formData) =>{ 
-  let path = "/confirmation"; 
-   navigate(path);}
+let navigate = useNavigate();
+const submitForm = (formData) =>{
+  let path = "/confirmation";
+  navigate(path);}
 
-function updateTimes(state, selectedDate) {
-  return {availableTimes: fetchAPI(selectedDate)};
+  function updateTimes(state) {
+    return {availableTimes: [ "18:00", "19:00",  "21:00", "22:00"]}
 }
 
-function handleDateChange(selectedDate) {
-  dispatch(selectedDate);
-}
+const handleChange = (e) => {
+  setDate(e);
+  dispatch(e);
+ }
 
   return (
   <div className="booking page">
-    <BookingForm availableTimes={state} dispatch={dispatch} handleDateChange={handleDateChange} submitForm={submitForm}/>
+    <BookingForm availableTimes={state} setDate={setDate} date={date} dispatch={dispatch} handleDateChange={handleChange} submitForm={submitForm}/>
   </div>
   )
 }

@@ -11,15 +11,15 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 function App() {
   return (
       <Router>
-            <Header/>
-               <ChakraProvider>
-                  <Routes>
-                     <Route path="/" element={ <HomePage />} />
-                     <Route path="/reservation" element={ <BookingPage/>} />
-                     <Route path="/confirmation" element={<ConfirmedBooking/>} />
-                  </Routes>
-               </ChakraProvider>
-            <Footer/>
+         <Header/>
+            <ChakraProvider>
+               <Routes>
+                  <Route path="/" element={<HomePage />}/>
+                  <Route path="/reservation" element={<BookingPage/>}/>
+                  <Route path="/confirmation" element={<ConfirmedBooking/>}/>
+               </Routes>
+            </ChakraProvider>
+         <Footer/>
       </Router>
    );
 }

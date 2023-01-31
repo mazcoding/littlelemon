@@ -19,7 +19,6 @@ function Contact() {
                 <FaEnvelope color="#F4CE14"/>
                 <a href="mailto:info@littlelemon.com">info@littlelemon.com</a>
             </HStack>
-
     </Flex>
     </Box>
   )

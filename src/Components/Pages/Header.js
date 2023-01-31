@@ -1,7 +1,6 @@
 import React from 'react'
 import logo from '/Users/misaghazimi/Documents/WebDevelopment/lemon/src/images/Logo.svg'
 import Navigation from '../MainComponents/Navigation'
-import { Helmet } from 'react-helmet'
 import { Box, HStack, Image } from '@chakra-ui/react'
 
 function Header() {
