@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, SimpleGrid, Flex, CardHeader, Heading, CardBody, Grid, Image, Avatar, Text, CardFooter } from '@chakra-ui/react'
+import { Card, Flex, CardHeader, Heading, CardBody, Grid, Avatar, Text, CardFooter } from '@chakra-ui/react'
 
 function TesteTemplate({testemonial}) {
 
